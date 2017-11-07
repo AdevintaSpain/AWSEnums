@@ -1,16 +1,18 @@
-import requests
+import boto3
 
-r = requests.get("https://raw.githubusercontent.com/boto/botocore/develop/botocore/data/ec2/2016-04-01/service-2.json")
-r.status_code
+session = boto3.Session(region_name="us-east-1", profile_name="sch-gov")
+pricing = session.client('pricing')
+
+
+response = pricing.get_attribute_values(ServiceCode='AmazonEC2', AttributeName='instanceType')
+
 
 path = 'type.py'
 python_file = open(path, 'w')
-
-
 python_file.write("from enum import Enum\n")
 python_file.write("\n")
 python_file.write("\n")
 python_file.write("class Type(Enum):\n")
-for instance_type in r.json()["shapes"]["InstanceType"]["enum"]:
-    python_file.write("    {} = \"{}\"\n".format(instance_type.upper().replace(".", "_"), instance_type))
-
+for instance in response['AttributeValues']:
+    if "." in instance['Value']:
+        python_file.write("    {} = \"{}\"\n".format(instance['Value'].upper().replace(".", "_"), instance['Value']))
