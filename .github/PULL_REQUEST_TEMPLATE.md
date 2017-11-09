@@ -2,9 +2,6 @@
 Please delete what is not relevant for your PR. If it's an really easy-to-understand fix, you don't need
 all this beaurocracy.
 
-Please check [this](https://github.schibsted.io/scmspain/devops-ij--aws-infrastructure/pull/306) example
-in order to comply with this PR style.
-
 # Background
 
 X
