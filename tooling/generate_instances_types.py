@@ -1,6 +1,16 @@
 import boto3
+import argparse
 
-session = boto3.Session(region_name="us-east-1", profile_name="sch-gov")
+
+parser = argparse.ArgumentParser(description='Generate a aws instance type enum.')
+
+parser.add_argument('-r', '--region', help="AWS region, now only works with us-east-1", type=str, default="us-east-1")
+parser.add_argument('-p', '--profile', help="AWS profile", type=str)
+
+params = vars(parser.parse_args())
+
+
+session = boto3.Session(region_name=params["region"], profile_name=params["profile"])
 pricing = session.client('pricing')
 
 
