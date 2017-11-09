@@ -4,8 +4,12 @@ import argparse
 
 parser = argparse.ArgumentParser(description='Generate a aws instance type enum.')
 
-parser.add_argument('-r', '--region', help="AWS region, now only works with us-east-1", type=str, default="us-east-1")
-parser.add_argument('-p', '--profile', help="AWS profile", type=str)
+parser.add_argument('-r', '--region',
+                    help="AWS region, now only works with us-east-1",
+                    type=str,
+                    default="us-east-1",
+                    required=False)
+parser.add_argument('-p', '--profile', help="AWS profile", type=str, required=False)
 
 params = vars(parser.parse_args())
 

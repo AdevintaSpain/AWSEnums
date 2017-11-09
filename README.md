@@ -13,4 +13,9 @@ Actually we can create it manually with the tool: AWSEnums/tooling/generate_inst
 
 ```pipenv run python tooling/generate_instances_types.py -r us-east-1 -p sch-gov```
 
+or if you prefer use the aws environment variables (AWS_DEFAULT_REGION, AWS_PROFILE or AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY) use:
+
+```pipenv run python tooling/generate_instances_types.py```
+
+
 **NOTE:** Now the aws pricing api only works on us-east-1. 
