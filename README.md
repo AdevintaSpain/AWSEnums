@@ -7,3 +7,10 @@ Based on the [official packaging documentation of python](https://packaging.pyth
 * ```python setup.py bdist_wheel```
 * ```gpg --detach-sign -a dist/AWSEnums-X.X.Xtar.gz```
 * ```twine upload dist/AWSEnums-X.X.X.tar.gz dist/AWSEnums-X.X.X.tar.gz.asc```
+
+# How To build the instances type enum:
+Actually we can create it manually with the tool: AWSEnums/tooling/generate_instances_types.py only run the command:
+
+```pipenv run python tooling/generate_instances_types.py -r us-east-1 -p sch-gov```
+
+**NOTE:** Now the aws pricing api only works on us-east-1. 
