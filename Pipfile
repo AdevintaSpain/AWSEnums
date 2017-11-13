@@ -15,4 +15,8 @@ wheel = "*"
 [packages]
 
 "boto3" = "*"
-enum = "*"
+
+
+[requires]
+
+python_version = "3.6"
