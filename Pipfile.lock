@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "65c371ff77fecd08ac83b21e58b25bee558b5d6109d119f00bc1e269214ef5dc"
+            "sha256": "b44cae409c1cc07e2eb76f2d8d6902608defd065454419cdf5db31d4f88eb51f"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -36,10 +36,10 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:f2b37df301e2ca89ede2e7f03690272b495e97f21673524a49b270dc193f2a54",
-                "sha256:93b5953a936086758fb66197404df46765152378efec16a83d47638222679f86"
+                "sha256:ab01d3c3965ccbc20c170055c7584adeab80273928a409e47833e6d7d1cbc4a7",
+                "sha256:4cfb8be5e49e9504c0cffa4438895ebba986552d4c9617e2d909b633f591de73"
             ],
-            "version": "==1.7.42"
+            "version": "==1.7.43"
         },
         "docutils": {
             "hashes": [
@@ -48,6 +48,12 @@
                 "sha256:51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274"
             ],
             "version": "==0.14"
+        },
+        "enum": {
+            "hashes": [
+                "sha256:54e78526b166982b36884613f35a76d9a6711c49810d3ec1a05b10c9b31f938e"
+            ],
+            "version": "==0.4.6"
         },
         "futures": {
             "hashes": [
