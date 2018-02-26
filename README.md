@@ -11,7 +11,7 @@ Based on the [official packaging documentation of python](https://packaging.pyth
 # How To build the instances type enum:
 Actually we can create it manually with the tool: AWSEnums/tooling/generate_instances_types.py only run the command:
 
-```pipenv run python tooling/generate_instances_types.py -r us-east-1 -p sch-gov```
+```pipenv run python tooling/generate_instances_types.py -r us-east-1 -p account_alias```
 
 or if you prefer use the aws environment variables (AWS_DEFAULT_REGION, AWS_PROFILE or AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY) use:
 
