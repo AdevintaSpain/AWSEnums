@@ -5,7 +5,7 @@ Python module that contains a list of enums useful for your applications.
 Based on the [official packaging documentation of python](https://packaging.python.org/tutorials/distributing-packages/#pure-python-wheels):
 * ```python setup.py sdist```
 * ```python setup.py bdist_wheel```
-* ```gpg --detach-sign -a dist/AWSEnums-X.X.Xtar.gz```
+* ```gpg --detach-sign -a dist/AWSEnums-X.X.X.tar.gz```
 * ```twine upload dist/AWSEnums-X.X.X.tar.gz dist/AWSEnums-X.X.X.tar.gz.asc```
 
 # How To build the instances type enum:
