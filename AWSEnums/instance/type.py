@@ -105,3 +105,6 @@ class Type(Enum):
     X1E_4XLARGE = "x1e.4xlarge"
     X1E_8XLARGE = "x1e.8xlarge"
     X1E_XLARGE = "x1e.xlarge"
+
+    # Dedicated hosts:
+    I3 = "I3"
