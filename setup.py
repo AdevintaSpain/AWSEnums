@@ -11,7 +11,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='AWSEnums',
-    version='0.0.1.dev8',
+    version='0.0.1.dev9',
 
     description='Python module that contains a list of enums useful for your applications.',
     long_description=long_description,
