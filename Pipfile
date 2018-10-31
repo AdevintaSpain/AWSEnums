@@ -10,7 +10,7 @@ name = "pypi"
 twine = "*"
 setuptools = "*"
 wheel = "*"
-requests = "*"
+requests = ">=2.20.0"
 
 
 [packages]
