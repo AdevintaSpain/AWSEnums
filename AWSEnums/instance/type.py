@@ -156,3 +156,6 @@ class Type(Enum):
     Z1D_6XLARGE = "z1d.6xlarge"
     Z1D_LARGE = "z1d.large"
     Z1D_XLARGE = "z1d.xlarge"
+
+    # Dedicated hosts:
+    I3 = "I3"
